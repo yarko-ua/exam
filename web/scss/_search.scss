@@ -1,0 +1,59 @@
+$font-main: 'Aleo', serif;
+$font-extra: 'Josefin Sans', sans-serif;
+
+.search {
+    width: 100%;
+    max-width: 1770px;
+    min-width: 340px;
+    margin: 0 auto;
+    background-color: #333333;
+    color: #fff;
+}
+.search__box{
+    width: 99%;
+    margin: 0 auto;
+    text-align: center;
+    i {
+        font-size: 50px;
+        &.fa-search{
+            color: #5474fd;
+        }
+        &.fa-check-circle {
+            color: #ff6363 ;
+        }
+        &.fa-thumbs-up {
+            color:#00a2ff ;
+        }
+    }
+}
+.search__item {
+    display: inline-block;
+    padding: 100px 7% 110px;
+    
+    span {
+        display: block;
+        font-size: 36px;
+        font-family: $font-main;
+    }
+    
+}
+
+@media screen and (max-width:1135px) {
+    .search__box{
+        i {
+            font-size: 40px;
+        }
+    }
+    .search__item {
+        display: inline-block;
+        padding: 100px 7% 110px;
+        
+        span {
+            display: block;
+            font-size: 30px;
+            font-family: $font-main;
+        }
+        
+    }
+
+}

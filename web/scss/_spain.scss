@@ -1,0 +1,123 @@
+$font-main: 'Aleo', serif;
+$font-extra: 'Josefin Sans', sans-serif;
+
+.spain {
+    width: 100%;
+    max-width: 1770px;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.spain__top {
+    min-height: 700px;
+    background: url(../img/modernhouse.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 1px;
+    position: relative;
+    .spain__block {
+        margin-left: 16%;
+        margin-top: 14%;
+    }
+}
+
+.spain__bottom {
+    position: relative;
+    min-height: 700px;
+    background: url(../img/cliffs.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    .spain__block{
+        position: absolute;
+        top: 230px;
+        right: 236px;
+    }
+}
+
+.spain__block{
+    background-color: rgba($color: #1d1d1d, $alpha: 0.7);
+    width: 540px;
+    height: 370px;
+    padding-left: 30px;
+
+    .title {
+        display: block;
+        font-size: 20px;
+        font-family: $font-extra;
+        font-weight: 400;
+        padding-top: 50px;
+    }
+    .spain__subtitle{
+        @extend .title ;
+        padding-top: 31px;
+        text-transform: uppercase;
+    }
+    .spain__text {
+        @extend .title;
+        font-size: 16px;
+        padding-top: 31px;
+    }
+}
+
+@media screen and (max-width:1135px){
+    .spain__top {
+        .spain__block {
+            margin-left: 10%;
+            margin-top: 9%;
+        }
+    }
+    
+    .spain__bottom {
+        .spain__block{
+            top: 130px;
+            right: 136px;
+        }
+    }
+}
+
+
+@media screen and (max-width:755px) {
+    .spain__top {
+        .spain__block {
+            position: static;
+            margin: 100px auto;
+        }
+    }
+    
+    .spain__bottom {
+        padding-top: 1px;
+        .spain__block{
+            position: static;
+            margin: 100px auto;
+        }
+    }
+
+    .spain__block{
+        width: 500px;
+        height: 320px;
+        padding-left: 20px;
+    
+        .title {
+            display: block;
+            font-size: 18px;
+            font-family: $font-extra;
+            font-weight: 400;
+            padding-top: 40px;
+        }
+        .spain__subtitle{
+            display: block;
+            font-size: 18px;
+            font-family: $font-extra;
+            font-weight: 400;
+            padding-top: 31px;
+            text-transform: uppercase;
+        }
+        .spain__text {
+            font-family: $font-extra;
+            font-weight: 400;
+            font-size: 14px;
+            padding-top: 31px;
+            
+        }
+    }
+}

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+//_header
+@import 'header';
+
+//_chooseUS
+@import 'chooseUs';
+
+//_search
+@import 'search';
+
+//_spain
+@import 'spain';
+
+//_tourist
+@import 'tourist';
+
+//_footer
+@import 'footer';

@@ -1,0 +1,47 @@
+$font-main: 'Aleo', serif;
+$font-extra: 'Josefin Sans', sans-serif;
+
+footer {
+    min-height: 270px;
+    width: 100%;
+    max-width: 1770px;
+    background-color: #232323;
+    color: #fff;
+    margin: 0 auto;
+    h2 {
+        text-align: center;
+        font-family: $font-extra;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        padding-top: 120px;
+        text-transform: uppercase;
+    }
+    h3{
+        text-align: center;
+        font-family: $font-extra;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding: 15px 0px 28px;
+    }
+    
+}
+
+.footer__contact {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 0 11px;
+    }
+}
+i {
+    font-size: 21px;
+    padding-bottom: 50px;
+    color: #fff;
+&:hover{   color: #5474fd; }
+
+}

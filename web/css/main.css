@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+.header {
+  width: 100%;
+  max-width: 1770px;
+  min-height: 820px;
+  background: url(../img/mountains.jpg) no-repeat center;
+  background-size: cover;
+  color: white;
+  margin: 0 auto;
+  position: relative; }
+
+.header__title {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 0;
+  padding: 165px 0 15px; }
+
+.header__subtitle {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 7px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 53px; }
+
+.header__form {
+  width: 100%;
+  min-width: 200px;
+  max-width: 655px;
+  height: 65px;
+  margin: 0 auto;
+  margin-bottom: 120px; }
+  .header__form input {
+    min-width: 200px;
+    width: 76%;
+    max-width: 501px;
+    height: 60px;
+    margin: 0;
+    border: 2px solid #fff;
+    float: left;
+    padding-left: 25%;
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif; }
+
+.btn-header {
+  height: 60px;
+  width: 150px;
+  background-color: #5474fd;
+  color: #fff;
+  border: 2px solid #fff;
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  transition: box-shadow .7s ease-out; }
+  .btn-header:hover {
+    cursor: pointer;
+    box-shadow: inset 150px 0px #00ff99; }
+  .btn-header__text {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-left: 20px; }
+  .btn-header img {
+    display: inline-block;
+    vertical-align: middle;
+    fill: #fff; }
+
+.header__scrldwn {
+  display: block;
+  margin: 0 auto;
+  width: 110px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 10px; }
+
+.header__dwn {
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  width: 10px;
+  height: 10px;
+  transform: rotateZ(90deg);
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 200px; }
+  .header__dwn a {
+    text-decoration: none;
+    color: #fff; }
+
+.navigation {
+  display: block;
+  min-height: 80px;
+  background: #5474fd;
+  position: sticky;
+  top: 742px; }
+  .navigation__logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    float: left;
+    padding-top: 26px;
+    padding-bottom: 27px;
+    margin-left: 17%;
+    margin-right: 20%; }
+  .navigation ul li {
+    display: inline-block;
+    padding: 30px 17px;
+    transition: all .4s linear; }
+    .navigation ul li:hover {
+      color: red;
+      transform: rotateZ(-15deg);
+      cursor: pointer; }
+  .navigation a {
+    font-size: 14px;
+    font-family: "Aleo", serif;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color 0.3s linear; }
+    .navigation a:hover {
+      color: red; }
+
+.chooseUs {
+  background: url(../img/eveningcity.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  max-width: 1770px;
+  min-height: 690px;
+  margin: 0 auto;
+  position: relative; }
+
+.chooseUs-flex {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.chooseUs__text {
+  padding-top: 190px;
+  margin-right: 60px;
+  width: 541px;
+  color: #fff; }
+  .chooseUs__text h2 {
+    font-size: 36px;
+    font-family: "Aleo", serif;
+    margin-bottom: 65px; }
+  .chooseUs__text p {
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-weight: 400;
+    line-height: 26px; }
+
+.btn-main {
+  width: 225px;
+  height: 60px;
+  margin: 50px 0;
+  background: url(../img/buttongradient.png) no-repeat, url(../img/buttonbackground.png) no-repeat;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Aleo", serif;
+  text-transform: uppercase;
+  border: none;
+  word-spacing: 6px; }
+  .btn-main:hover {
+    cursor: pointer;
+    box-shadow: inset 6px 5px 5px #333333; }
+
+.chooseUs__img {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 80px;
+  margin-bottom: 60px; }
+
+.chooseUs__riverhouse {
+  min-width: 300px; }
+  .chooseUs__riverhouse img {
+    width: 100%; }
+
+.chooseUs__smMountain {
+  align-self: flex-end;
+  min-width: 300px; }
+  .chooseUs__smMountain img {
+    width: 100%; }
+
+.search {
+  width: 100%;
+  max-width: 1770px;
+  min-width: 340px;
+  margin: 0 auto;
+  background-color: #333333;
+  color: #fff; }
+
+.search__box {
+  width: 99%;
+  margin: 0 auto;
+  text-align: center; }
+  .search__box i {
+    font-size: 50px; }
+    .search__box i.fa-search {
+      color: #5474fd; }
+    .search__box i.fa-check-circle {
+      color: #ff6363; }
+    .search__box i.fa-thumbs-up {
+      color: #00a2ff; }
+
+.search__item {
+  display: inline-block;
+  padding: 100px 7% 110px; }
+  .search__item span {
+    display: block;
+    font-size: 36px;
+    font-family: "Aleo", serif; }
+
+@media screen and (max-width: 1135px) {
+  .search__box i {
+    font-size: 40px; }
+  .search__item {
+    display: inline-block;
+    padding: 100px 7% 110px; }
+    .search__item span {
+      display: block;
+      font-size: 30px;
+      font-family: "Aleo", serif; } }
+
+.spain {
+  width: 100%;
+  max-width: 1770px;
+  color: #fff;
+  margin: 0 auto; }
+
+.spain__top {
+  min-height: 700px;
+  background: url(../img/modernhouse.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 1px;
+  position: relative; }
+  .spain__top .spain__block {
+    margin-left: 16%;
+    margin-top: 14%; }
+
+.spain__bottom {
+  position: relative;
+  min-height: 700px;
+  background: url(../img/cliffs.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%; }
+  .spain__bottom .spain__block {
+    position: absolute;
+    top: 230px;
+    right: 236px; }
+
+.spain__block {
+  background-color: rgba(29, 29, 29, 0.7);
+  width: 540px;
+  height: 370px;
+  padding-left: 30px; }
+  .spain__block .title, .spain__block .spain__subtitle, .spain__block .spain__text {
+    display: block;
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    padding-top: 50px; }
+  .spain__block .spain__subtitle {
+    padding-top: 31px;
+    text-transform: uppercase; }
+  .spain__block .spain__text {
+    font-size: 16px;
+    padding-top: 31px; }
+
+@media screen and (max-width: 1135px) {
+  .spain__top .spain__block {
+    margin-left: 10%;
+    margin-top: 9%; }
+  .spain__bottom .spain__block {
+    top: 130px;
+    right: 136px; } }
+
+@media screen and (max-width: 755px) {
+  .spain__top .spain__block {
+    position: static;
+    margin: 100px auto; }
+  .spain__bottom {
+    padding-top: 1px; }
+    .spain__bottom .spain__block {
+      position: static;
+      margin: 100px auto; }
+  .spain__block {
+    width: 500px;
+    height: 320px;
+    padding-left: 20px; }
+    .spain__block .title, .spain__block .spain__subtitle, .spain__block .spain__text {
+      display: block;
+      font-size: 18px;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 400;
+      padding-top: 40px; }
+    .spain__block .spain__subtitle {
+      display: block;
+      font-size: 18px;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 400;
+      padding-top: 31px;
+      text-transform: uppercase; }
+    .spain__block .spain__text {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      padding-top: 31px; } }
+
+.tourist {
+  background-color: #333333;
+  background-image: url(../img/man.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  max-width: 1770px;
+  min-height: 730px;
+  color: #fff;
+  margin: 0 auto; }
+  .tourist:hover {
+    background-image: opacity(0.1); }
+  .tourist__title {
+    text-transform: capitalize;
+    font-size: 36px;
+    font-family: "Aleo", serif;
+    text-align: center;
+    padding: 120px 0 95px; }
+
+.tourist__box {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.tourist__smMan {
+  width: 445px;
+  height: 285px;
+  background: url(../img/smMan.jpg) no-repeat center;
+  background-size: cover; }
+
+.tourist__textblock {
+  display: block;
+  width: 665px;
+  height: 285px;
+  background-color: #333333; }
+
+.tourist__subtitle {
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  padding-top: 50px;
+  padding-left: 60px; }
+
+.tourist__text {
+  font-family: "Aleo", serif;
+  margin-top: 20px;
+  font-size: 16px;
+  width: 590px;
+  line-height: 24px;
+  padding-left: 60px; }
+
+@media screen and (max-width: 1135px) {
+  .tourist__box {
+    flex-direction: column; }
+  .tourist__textblock {
+    width: 445px;
+    margin-bottom: 50px; }
+  .tourist__subtitle {
+    padding-top: 25px;
+    padding-left: 35px; }
+  .tourist__text {
+    width: 420px;
+    font-size: 14px;
+    padding-bottom: 30px;
+    padding-left: 35px; } }
+
+footer {
+  min-height: 270px;
+  width: 100%;
+  max-width: 1770px;
+  background-color: #232323;
+  color: #fff;
+  margin: 0 auto; }
+  footer h2 {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding-top: 120px;
+    text-transform: uppercase; }
+  footer h3 {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 15px 0px 28px; }
+
+.footer__contact {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center; }
+  .footer__contact a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 11px; }
+
+i {
+  font-size: 21px;
+  padding-bottom: 50px;
+  color: #fff; }
+  i:hover {
+    color: #5474fd; }
+
+/*# sourceMappingURL=main.css.map */

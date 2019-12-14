@@ -1,0 +1,159 @@
+$font-main: 'Aleo', serif;
+$font-extra: 'Josefin Sans', sans-serif;
+
+.header {
+    width: 100%;
+    max-width: 1770px;
+    min-height: 820px;
+    background: url(../img/mountains.jpg) no-repeat  center;
+    background-size: cover;
+    color: white;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.header__title {
+    text-transform: uppercase;
+    font-family: $font-extra;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 0 ;
+    padding: 165px 0 15px;
+}
+
+.header__subtitle {
+    font-family: $font-extra;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 7px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 53px;
+}
+.header__form {
+    width: 100%;
+    min-width: 200px;
+    max-width: 655px;
+height: 65px;
+margin: 0 auto;
+margin-bottom: 120px;
+input {
+    min-width: 200px;
+    width: 76%;
+    max-width: 501px;
+    height: 60px;
+    margin: 0;
+    border: 2px solid #fff;
+    float: left;
+    padding-left: 25%;
+    font-size: 14px;
+    font-family: $font-extra;
+}
+}
+.btn-header {
+    height: 60px;
+    width: 150px;
+    background-color: #5474fd;
+    color: #fff;
+    border: 2px solid #fff;
+    font-family: $font-main;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    transition: box-shadow .7s ease-out ;
+    &:hover {
+        cursor: pointer;
+        box-shadow: inset 150px 0px #00ff99;
+    }
+    &__text {
+        display: inline-block;
+        vertical-align: middle;
+        text-transform: uppercase;
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        fill:#fff;
+    }
+}
+    
+.header__scrldwn {
+    display: block;
+    margin: 0 auto;
+    width: 110px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: $font-extra;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.header__dwn {
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    width: 10px;
+    height: 10px;
+    transform: rotateZ(90deg);
+    font-family: $font-extra;
+    margin-bottom: 200px;
+    
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+}
+
+.navigation {
+    display: block;
+    min-height: 80px;
+    background: #5474fd;
+    position: sticky;
+    top: 742px;
+    
+    &__logo {
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+        font-family: $font-extra;
+        text-transform: uppercase;
+        float: left;
+        padding-top: 26px;
+        padding-bottom: 27px;
+        margin-left: 17%;
+        margin-right: 20%;
+        
+    }
+    ul {
+       li {
+           display: inline-block;
+            padding: 30px 17px;
+            transition: all .4s linear;
+            &:hover {
+                color: red;
+                transform: rotateZ(-15deg);
+                cursor: pointer;
+            }
+       } 
+    }
+    a {
+        font-size: 14px;
+        font-family: $font-main;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        transition: color 0.3s linear;
+        &:hover {
+            color: red;
+        }
+    }
+}
+
