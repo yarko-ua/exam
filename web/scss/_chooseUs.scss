@@ -9,34 +9,61 @@ $font-extra: 'Josefin Sans', sans-serif;
     min-height: 690px;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   
 }
 .chooseUs-flex {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .chooseUs__text {
-    padding-top: 190px;
-    margin-right:60px;
     width: 541px;
     color: #fff;
+    margin-top: 120px;
     h2 {
         font-size: 36px;
         font-family: $font-main;
-        margin-bottom: 65px;
+        font-weight: 400;
+        margin-bottom: 60px;
     }
     p {
         font-size: 16px;
         font-family: $font-extra;
-        font-weight: 400;
-        font-weight: 400;
+        font-weight: 300;
+        opacity: 0.8;
         line-height: 26px;
+        letter-spacing: 2px;
     }
+}
+
+.chooseUs__img {
+    width: 100%;
+    max-width: 540px;
+    min-width: 280px;
+    margin: 120px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.chooseUs__riverhouse {
+    min-width: 280x;
+    padding-bottom: 5px;
+    img {width:100%};
+
+}
+
+.chooseUs__smMountain {
+    align-self: flex-end;
+    min-width: 280px;
+    img{ width: 100%; }
 }
 
 .btn-main {
@@ -50,31 +77,11 @@ $font-extra: 'Josefin Sans', sans-serif;
     font-family: $font-main;
     text-transform: uppercase;
     border: none;
-    word-spacing: 6px;
+    
+    letter-spacing: 1px;
     &:hover {
         cursor: pointer;
         box-shadow: inset 6px 5px 5px #333333;
         
     }
-}
-
-.chooseUs__img {
-    width: 540px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 80px;
-    margin-bottom: 60px;
-    
-}
-
-.chooseUs__riverhouse {
-    min-width: 300px;
-    img {width:100%};
-}
-
-.chooseUs__smMountain {
-    align-self: flex-end;
-    min-width: 300px;
-    img{ width: 100%; }
 }
