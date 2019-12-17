@@ -6,7 +6,6 @@
 
 .header {
   width: 100%;
-  max-width: 1770px;
   min-height: 820px;
   background: url(../img/mountains.jpg) no-repeat center;
   background-size: cover;
@@ -122,7 +121,6 @@
     color: white;
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
-    float: left;
     padding-top: 26px;
     padding-bottom: 27px;
     margin-left: 3%; }
@@ -160,45 +158,44 @@
     margin-top: 200px;
     position: sticky;
     top: 0px; }
-    .navigation__logo {
-      font-size: 24px;
-      font-weight: 700;
-      color: white;
-      font-family: "Josefin Sans", sans-serif;
-      text-transform: uppercase;
-      float: left;
-      padding-top: 26px;
-      padding-bottom: 27px;
-      margin-left: 3%; }
-      .navigation__logo::after {
-        content: "|||";
-        display: inline-flex;
-        width: 25px;
-        height: 25px;
-        transform: rotateZ(90deg); }
     .navigation ul {
       display: none;
       flex-flow: row nowrap;
       justify-content: space-around;
       width: 100%;
-      max-width: 470px;
-      list-style-type: none;
+      max-width: none;
+      list-style: none;
       padding-left: 0; }
       .navigation ul li {
-        padding: 30px 7px;
-        transition: all .3s linear; }
+        width: 25%;
+        text-align: center;
+        transition: all .3s linear;
+        background: #5474fd; }
         .navigation ul li:hover {
-          transform: rotateZ(-6deg);
+          transform: translateY(7px);
+          box-shadow: 0 -7px #fff;
           cursor: pointer; }
-    .navigation a {
-      font-size: 14px;
-      font-family: "Aleo", serif;
-      text-decoration: none;
-      color: #fff;
-      text-transform: uppercase;
-      transition: color 0.3s linear; }
-      .navigation a:hover {
-        color: red; } }
+        .navigation ul li a {
+          font-size: 13px; }
+    .navigation__logo {
+      line-height: 24px; }
+      .navigation__logo::after {
+        content: "";
+        display: inline-block;
+        vertical-align: text-top;
+        border-right: 20px solid red;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        margin-left: 10px;
+        transition: .4s ease-in-out; }
+      .navigation__logo:hover {
+        cursor: pointer; }
+      .navigation__logo:hover::after {
+        transform: rotateZ(-90deg); }
+      .navigation__logo:hover + ul {
+        display: flex;
+        position: absolute;
+        top: 100%; } }
 
 @media screen and (max-width: 375px) {
   .header__title {
@@ -224,10 +221,8 @@
   background: url(../img/eveningcity.jpg) no-repeat center;
   background-size: cover;
   width: 100%;
-  max-width: 1770px;
   min-height: 690px;
   margin: 0 auto;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -295,7 +290,6 @@
 
 .search {
   width: 100%;
-  max-width: 1770px;
   min-width: 300px;
   margin: 0 auto;
   background-color: #333333;
@@ -345,7 +339,6 @@
 
 .spain {
   width: 100%;
-  max-width: 1770px;
   color: #fff;
   margin: 0 auto; }
 
@@ -373,7 +366,7 @@
 
 .spain__block {
   background-color: rgba(29, 29, 29, 0.85);
-  width: 100%;
+  width: 90%;
   max-width: 540px;
   min-width: 280px;
   height: 370px;
@@ -403,7 +396,8 @@
 @media screen and (max-width: 755px) {
   .spain__top .spain__block {
     position: static;
-    margin: 100px auto; }
+    margin: 100px auto;
+    padding-right: 5px; }
   .spain__bottom {
     padding-top: 1px; }
     .spain__bottom .spain__block {
@@ -431,7 +425,6 @@
   background: url(../img/man.jpg) no-repeat center;
   background-size: cover;
   width: 100%;
-  max-width: 1770px;
   min-height: 730px;
   color: #fff;
   margin: 0 auto;
@@ -471,11 +464,13 @@
   height: 285px;
   background: url(../img/smMan.jpg) no-repeat center;
   background-size: cover; }
+  .tourist__smMan img {
+    width: 100%; }
 
 .tourist__textblock {
   display: block;
   width: 665px;
-  height: 285px;
+  min-height: 285px;
   background-color: #333333; }
 
 .tourist__subtitle {
@@ -510,15 +505,24 @@
 
 @media screen and (max-width: 1135px) {
   .tourist__box {
-    flex-direction: column; }
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%; }
+  .tourist__smMan {
+    width: 100%;
+    max-width: 445px;
+    min-width: 250px; }
   .tourist__textblock {
-    width: 445px;
+    width: 100%;
+    max-width: 445px;
+    min-width: 250px;
     margin-bottom: 50px; }
   .tourist__subtitle {
     padding-top: 25px;
     padding-left: 35px; }
   .tourist__text {
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
     font-size: 14px;
     padding-bottom: 30px;
     padding-left: 35px; }
@@ -528,7 +532,6 @@
 footer {
   min-height: 270px;
   width: 100%;
-  max-width: 1770px;
   background-color: #232323;
   color: #fff;
   margin: 0 auto; }

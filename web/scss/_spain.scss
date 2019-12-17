@@ -3,7 +3,6 @@ $font-extra: 'Josefin Sans', sans-serif;
 
 .spain {
     width: 100%;
-    max-width: 1770px;
     color: #fff;
     margin: 0 auto;
 }
@@ -36,7 +35,7 @@ $font-extra: 'Josefin Sans', sans-serif;
 
 .spain__block{
     background-color: rgba($color: #1d1d1d, $alpha: 0.85);
-    width: 100%;
+    width: 90%;
     max-width: 540px;
     min-width: 280px;
     height: 370px;
@@ -84,6 +83,7 @@ $font-extra: 'Josefin Sans', sans-serif;
         .spain__block {
             position: static;
             margin: 100px auto;
+            padding-right:5px ;
         }
     }
     

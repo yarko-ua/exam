@@ -3,7 +3,6 @@ $font-extra: 'Josefin Sans', sans-serif;
 
 .header {
     width: 100%;
-    max-width: 1770px;
     min-height: 820px;
     background: url(../img/mountains.jpg) no-repeat  center;
     background-size: cover;
@@ -134,7 +133,6 @@ $font-extra: 'Josefin Sans', sans-serif;
         color: white;
         font-family: $font-extra;
         text-transform: uppercase;
-        float: left;
         padding-top: 26px;
         padding-bottom: 27px;
         margin-left: 3%;
@@ -181,53 +179,51 @@ $font-extra: 'Josefin Sans', sans-serif;
         position: sticky;
         top: 0px;
         
-        
-        &__logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: white;
-            font-family: $font-extra;
-            text-transform: uppercase;
-            float: left;
-            padding-top: 26px;
-            padding-bottom: 27px;
-            margin-left: 3%;
-            &::after {
-                content: "|||";
-                display: inline-flex;
-                width: 25px;
-                height: 25px;
-                transform: rotateZ(90deg);
-            }
-            
-        }
         ul {
             display: none;
             flex-flow: row nowrap;
             justify-content: space-around;
             width: 100%;
-            max-width: 470px;
-            list-style-type: none;
+            max-width: none;
+            list-style: none;
             padding-left: 0;
-           li {
-                padding: 30px 7px;
-                transition: all .3s linear;
+           li { 
+            width: 25%;
+            text-align: center;
+            transition: all .3s linear;
+            background: #5474fd;
                 &:hover {
-                    transform: rotateZ(-6deg);
+                    transform: translateY(7px);
+                    box-shadow: 0 -7px #fff;
                     cursor: pointer;
                 }
+                a { font-size: 13px;}
            } 
         }
-        a {
-            font-size: 14px;
-            font-family: $font-main;
-            text-decoration: none;
-            color: #fff;
-            text-transform: uppercase;
-            transition: color 0.3s linear;
-            &:hover {
-                color: red;
+            
+        &__logo {
+            line-height: 24px;
+            &::after {
+                content: "";
+                display: inline-block;
+                vertical-align: text-top;
+                border-right: 20px solid red;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                margin-left: 10px;
+                transition: .4s ease-in-out;
             }
+            &:hover {
+                cursor: pointer;
+            }
+            &:hover::after {
+                transform: rotateZ(-90deg);
+            }
+            &:hover + ul {
+                display: flex;
+                position: absolute;
+                top: 100%;
+            } 
         }
     }
 }
