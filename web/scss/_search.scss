@@ -43,8 +43,11 @@ $font-extra: 'Josefin Sans', sans-serif;
         font-family: $font-main;
         font-weight: 400;
         &:hover {
+            -webkit-transition: all .3s linear;
+            -o-transition: all .3s linear;
             transition: all .3s linear;
-            text-decoration: underline rgb(20, 200, 100);
+            -webkit-text-decoration: underline rgb(20, 200, 100);
+                    text-decoration: underline rgb(20, 200, 100);
             cursor: pointer;
         }
     }

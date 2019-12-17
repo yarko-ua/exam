@@ -117,12 +117,18 @@ $font-extra: 'Josefin Sans', sans-serif;
 }
 
 .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 80px;
     background: #5474fd;
     margin-top: 200px;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     
@@ -139,18 +145,28 @@ $font-extra: 'Josefin Sans', sans-serif;
         
     }
     ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         width: 100%;
         max-width: 470px;
         list-style-type: none;
         padding-left: 0;
        li {
             padding: 30px 7px;
+            -webkit-transition: all .3s linear;
+            -o-transition: all .3s linear;
             transition: all .3s linear;
             &:hover {
-                transform: rotateZ(-6deg);
+                -webkit-transform: rotateZ(-6deg);
+                    -ms-transform: rotate(-6deg);
+                        transform: rotateZ(-6deg);
                 cursor: pointer;
             }
        } 
@@ -161,6 +177,8 @@ $font-extra: 'Josefin Sans', sans-serif;
         text-decoration: none;
         color: #fff;
         text-transform: uppercase;
+        -webkit-transition: color 0.3s linear;
+        -o-transition: color 0.3s linear;
         transition: color 0.3s linear;
         &:hover {
             color: red;
@@ -170,19 +188,29 @@ $font-extra: 'Josefin Sans', sans-serif;
 
 @media screen and (max-width:700px) {
     .navigation {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         min-height: 80px;
         background: #5474fd;
         margin-top: 200px;
+        position: -webkit-sticky;
         position: sticky;
         top: 0px;
         
         ul {
             display: none;
-            flex-flow: row nowrap;
-            justify-content: space-around;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: row nowrap;
+                    flex-flow: row nowrap;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
             width: 100%;
             max-width: none;
             list-style: none;
@@ -190,11 +218,16 @@ $font-extra: 'Josefin Sans', sans-serif;
            li { 
             width: 25%;
             text-align: center;
+            -webkit-transition: all .3s linear;
+            -o-transition: all .3s linear;
             transition: all .3s linear;
             background: #5474fd;
                 &:hover {
-                    transform: translateY(7px);
-                    box-shadow: 0 -7px #fff;
+                    -webkit-transform: translateY(7px);
+                        -ms-transform: translateY(7px);
+                            transform: translateY(7px);
+                    -webkit-box-shadow: 0 -7px #fff;
+                            box-shadow: 0 -7px #fff;
                     cursor: pointer;
                 }
                 a { font-size: 13px;}
@@ -211,15 +244,21 @@ $font-extra: 'Josefin Sans', sans-serif;
                 border-top: 10px solid transparent;
                 border-bottom: 10px solid transparent;
                 margin-left: 10px;
+                -webkit-transition: .4s ease-in-out;
+                -o-transition: .4s ease-in-out;
                 transition: .4s ease-in-out;
             }
             &:hover {
                 cursor: pointer;
             }
             &:hover::after {
-                transform: rotateZ(-90deg);
+                -webkit-transform: rotateZ(-90deg);
+                    -ms-transform: rotate(-90deg);
+                        transform: rotateZ(-90deg);
             }
             &:hover + ul {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
                 position: absolute;
                 top: 100%;
@@ -249,6 +288,8 @@ $font-extra: 'Josefin Sans', sans-serif;
         margin-bottom: 53px;
         opacity: 0.9;
     }
-
+    .navigation {
+    margin-top: 210px;
+    }
 }
 
