@@ -35,8 +35,10 @@ $font-extra: 'Josefin Sans', sans-serif;
 }
 
 .spain__block{
-    background-color: rgba($color: #1d1d1d, $alpha: 0.7);
-    width: 540px;
+    background-color: rgba($color: #1d1d1d, $alpha: 0.85);
+    width: 100%;
+    max-width: 540px;
+    min-width: 280px;
     height: 370px;
     padding-left: 30px;
 
@@ -44,7 +46,8 @@ $font-extra: 'Josefin Sans', sans-serif;
         display: block;
         font-size: 20px;
         font-family: $font-extra;
-        font-weight: 400;
+        font-weight: 300;
+        opacity: 0.9;
         padding-top: 50px;
     }
     .spain__subtitle{
@@ -93,28 +96,26 @@ $font-extra: 'Josefin Sans', sans-serif;
     }
 
     .spain__block{
-        width: 500px;
-        height: 320px;
         padding-left: 20px;
     
         .title {
             display: block;
             font-size: 18px;
             font-family: $font-extra;
-            font-weight: 400;
+          
             padding-top: 40px;
         }
         .spain__subtitle{
             display: block;
             font-size: 18px;
             font-family: $font-extra;
-            font-weight: 400;
+          
             padding-top: 31px;
             text-transform: uppercase;
         }
         .spain__text {
             font-family: $font-extra;
-            font-weight: 400;
+           
             font-size: 14px;
             padding-top: 31px;
             

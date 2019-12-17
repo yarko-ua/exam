@@ -1,27 +1,38 @@
+
 $font-main: 'Aleo', serif;
 $font-extra: 'Josefin Sans', sans-serif;
 
 .tourist {
-    background-color: #333333 ;
-    background-image: url(../img/man.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(../img/man.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
     max-width: 1770px;
     min-height: 730px;
     color: #fff;
     margin: 0 auto;
-    &:hover {
-        background-image: opacity(0.1);
-    }
+    position: relative;
+    overflow: hidden;
+    
 
     &__title {
         text-transform: capitalize;
         font-size: 36px;
         font-family: $font-main;
+        font-weight: 400;
         text-align: center;
         padding: 120px 0 95px ;
+        position: relative;
+        left: 100%;
+        transition: all .5s linear;
+        
+    }
+    &::before {
+        content: "";
+        background-color: rgba($color: #333333, $alpha: 0.8) ;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
     }
 }
 .tourist__box {
@@ -31,12 +42,17 @@ $font-extra: 'Josefin Sans', sans-serif;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
+    left: -150%;
+    transition: all .5s linear .4s;
+    
 }
 .tourist__smMan {
     width: 445px;
     height: 285px;
     background: url(../img/smMan.jpg) no-repeat center;
     background-size: cover;
+    
 }
 
 .tourist__textblock {
@@ -44,7 +60,6 @@ $font-extra: 'Josefin Sans', sans-serif;
     width: 665px;
     height: 285px;
     background-color: #333333;
-    
    
 }
 
@@ -53,19 +68,36 @@ $font-extra: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
     font-size: 20px;
     font-family: $font-extra;
-    font-weight: 400;
-    padding-top: 50px;
-    padding-left: 60px;
+    font-weight: 300;
+    padding: 50px 0 45px 60px;
 }
 
 .tourist__text {
-    font-family: $font-main;
-    margin-top: 20px;
+    font-family: $font-extra;
     font-size: 16px;
-    width: 590px;
-    line-height: 24px;
-    padding-left: 60px;
+    font-weight: 300;
+    opacity: 0.9;
+    line-height: 26px;
+    padding: 0 45px 0 60px;
+    .quote {
+        color: #5474fd;
+        margin-top: -16px;
+        margin-right: 5px;
+        display: block;
+        width: 17px;
+        height: 17px;
+        float: left;
+    }
 }
+
+.tourist:hover > .tourist__box, .tourist:hover > .tourist__title {
+    left: 0%;
+}
+
+.tourist:hover .tourist::after{
+    display: block;
+}
+
 @media screen and (max-width:1135px){
     .tourist__box {
         flex-direction: column;
@@ -84,4 +116,9 @@ $font-extra: 'Josefin Sans', sans-serif;
        padding-bottom: 30px;
        padding-left: 35px;
    }
+   .tourist {
+        &__title {
+        padding: 60px 0px ;
+        }
+    }
 }

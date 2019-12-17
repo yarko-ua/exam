@@ -20,10 +20,12 @@ footer {
     h3{
         text-align: center;
         font-family: $font-extra;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 16px;
         letter-spacing: 2px;
+        word-spacing: 2px;
         padding: 15px 0px 28px;
+        opacity: 0.9;
     }
     
 }
@@ -37,11 +39,12 @@ footer {
         text-decoration: none;
         padding: 0 11px;
     }
-}
-i {
+
+    i {
     font-size: 21px;
     padding-bottom: 50px;
     color: #fff;
-&:hover{   color: #5474fd; }
+    &:hover{   color: #5474fd; }
+    }
 
 }
