@@ -13,6 +13,7 @@ $font-extra: 'Josefin Sans', sans-serif;
     background-size: cover;
     width: 100%;
     padding-top: 1px;
+    padding-bottom: 1px;
     position: relative;
     .spain__block {
         margin-left: 16%;
@@ -25,6 +26,8 @@ $font-extra: 'Josefin Sans', sans-serif;
     min-height: 700px;
     background: url(../img/cliffs.jpg) no-repeat center;
     background-size: cover;
+    padding-top: 1px;
+    padding-bottom: 1px;
     width: 100%;
     .spain__block{
         position: absolute;
@@ -83,7 +86,7 @@ $font-extra: 'Josefin Sans', sans-serif;
         .spain__block {
             position: static;
             margin: 100px auto;
-            padding-right:5px ;
+            padding-right:5px;
         }
     }
     
@@ -92,6 +95,7 @@ $font-extra: 'Josefin Sans', sans-serif;
         .spain__block{
             position: static;
             margin: 100px auto;
+            padding-right: 5px;
         }
     }
 
